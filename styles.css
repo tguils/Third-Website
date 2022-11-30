@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+    margin-left: 5em;
+    justify-content: flex-start;
+    background: grey, .1%;
+    backdrop-filter: blur(1rem);
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color:rgb(240, 240, 239);
+    font-weight: 300;
+    font-size: 20px;
+  
+}
+
+.primary-navigation a:hover {
+    color:rgb(95, 236, 214);
+}
+
+.primary-navigation a > span  {
+    font-weight: 700;
+    margin-inline-end: .5em;
+}
+
+
+
+@media (max-width: 391px) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+    }
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 3rem);
+}
+
+.title-container {
+    height: 20rem;
+    width: 90rem;
+}
+
+.title {
+    color:azure;
+    font-size: 100px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    position: fixed;
+    right: 0px; bottom: 0px;
+    text-align: right;
+    padding: 20px;
+    margin: 0px;
+}
