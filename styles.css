@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    /*background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
 }
 .primary-navigation {
     list-style: none;
@@ -16,7 +19,8 @@ body {
     color:rgb(240, 240, 239);
     font-weight: 300;
     font-size: 20px;
-  
+
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 .primary-navigation a:hover {
@@ -30,7 +34,7 @@ body {
 
 
 
-@media (max-width: 391px) {
+/*@media (max-width: 391px) {
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 30%;
@@ -38,25 +42,60 @@ body {
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
     }
-}
+}*/
 
-.flex {
+ .flex {
     display: flex;
     gap: var(--gap, 3rem);
-}
+} 
 
 .title-container {
     height: 20rem;
     width: 90rem;
+    position: relative;
 }
 
 .title {
     color:azure;
     font-size: 100px;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    position: fixed;
+    
     right: 0px; bottom: 0px;
     text-align: right;
     padding: 20px;
     margin: 0px;
 }
+
+.title:hover {
+    animation-duration: 2s;
+    animation-name: twinkle;
+
+}
+@keyframes twinkle {
+    50% {
+    transform: scale(0.2);
+    opacity: 0.5;
+    }
+}
+
+.image {
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    opacity: 0.75;
+}
+    .image-overlay {
+        display: block;
+        font-family: 'century gothic', serif;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 14px;
+        margin-left: 20px;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+        width: 100%;
+        color: white;
+    
+      }
